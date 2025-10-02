@@ -1,136 +1,197 @@
 <!DOCTYPE html>
-<html class="dark" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Alex's Portfolio</title>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script>
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "primary": "#1173d4",
-              "background-light": "#f6f7f8",
-              "background-dark": "#101922",
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Bartosz Portfolio</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1173d4",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
             },
-            fontFamily: {
-              "display": ["Space Grotesk"]
-            },
-            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
-          },
-        },
-      }
+        }
     </script>
-<style>
-      body {
-        font-family: 'Space Grotesk', sans-serif;
-      }
+    <style>
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+        }
     </style>
 </head>
-<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
-<div class="min-h-screen">
-<header class="border-b border-gray-200 dark:border-gray-800">
-<div class="container mx-auto flex h-20 items-center justify-between px-4 sm:px-6 lg:px-8">
-<div class="flex items-center gap-3">
-<svg class="h-6 w-6 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_6_330)">
-<path clip-rule="evenodd" d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z" fill="currentColor" fill-rule="evenodd"></path>
-</g>
-<defs>
-<clipPath id="clip0_6_330"><rect fill="white" height="48" width="48"></rect></clipPath>
-</defs>
-</svg>
-<h1 class="text-xl font-bold text-gray-900 dark:text-white">Alex Johnson</h1>
-</div>
-<nav class="hidden items-center gap-8 md:flex">
-<a class="text-sm font-medium hover:text-primary" href="#about">About</a>
-<a class="text-sm font-medium hover:text-primary" href="#projects">Projects</a>
-<a class="text-sm font-medium hover:text-primary" href="#contact">Contact</a>
-<a class="text-gray-600 hover:text-primary dark:text-gray-400" href="#">
-<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
-<path d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"></path>
-</svg>
-</a>
-<a class="text-gray-600 hover:text-primary dark:text-gray-400" href="#">
-<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
-<path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"></path>
-</svg>
-</a>
-</nav>
-<button class="md:hidden">
-<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-<path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
-</button>
-</div>
-</header>
-<main class="container mx-auto px-4 py-16 sm:px-6 lg:px-8">
-<section class="text-center" id="hero">
-<div class="mx-auto h-40 w-40 rounded-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD4FB470TGrxrLyUOZp4fPZYZZGkpAYwG6cHSbWFq606FKFJmlDw5xxUkjKzYZ3yKxSPFgqVB5alVn6DVfiEp28eRPEhxGHnnjX4Mc_OLGqKr8HGfvH7yVLiNdlvFk4D2v1Lr7kl9UwJeo1knLwvUIktBLwLG0CiYFXO63NnwktJBwohOaKpYDZW4kdm7WB_xY7RuEJVvGHTvu_R5MsIuaH_IGs0quQWDk0uVSPaQmHPiPXAjcs7X78FaKGn9jFmvBxGpP3qzvbSgs')"></div>
-<h2 class="mt-6 text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl">Alex Johnson</h2>
-<p class="mt-3 text-xl text-primary">Java Developer</p>
-<p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600 dark:text-gray-400">
-            Experienced Java developer with a passion for creating efficient and scalable applications. Proven track record in delivering high-quality software solutions.
-          </p>
-</section>
-<section class="mx-auto mt-24 max-w-4xl scroll-mt-20" id="about">
-<h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">About Me</h2>
-<p class="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-400">
-            I am a dedicated Java developer with over 5 years of experience in designing, developing, and deploying robust applications. My expertise lies in building scalable and maintainable systems, with a focus on clean code and best practices. I am proficient in various Java frameworks and tools, and I am always eager to learn new technologies and tackle challenging projects. I thrive in collaborative environments and enjoy working with teams to achieve common goals.
-          </p>
-</section>
-<section class="mx-auto mt-24 max-w-4xl scroll-mt-20" id="projects">
-<h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Projects</h2>
-<div class="mt-12 grid gap-12 sm:grid-cols-1 lg:grid-cols-1">
-<div class="group grid items-center gap-8 rounded-lg bg-white/5 p-6 transition-all duration-300 hover:bg-white/10 dark:bg-black/5 dark:hover:bg-black/10 md:grid-cols-2 md:gap-12">
-<div class="overflow-hidden rounded-lg">
-<div class="h-64 w-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCjuSWUSSJ4OjhoKfdsDGiaEd9MIOVqYBvPz_ae7QWMNb83T8TSaFIc07trabS4DgWv2n8LfiqMPMEQmaI9y7Ndh3Xc9Jp6gSlNYXBQO5AxPml3WqEvg-YeeVGb5uh1SJKVyhjz3t28Z14xbfI5T-n7KtCqh0h12TsvQFKFEZiLfU8SHc7VtDF_KTSwfU_sB8OSjqIbjhJv2ItSsweclov1ewf86qJ8-m8AbyzZlCWNBP2VQPbXQYd5a7QUOw9ruVNeuWaWyU3RSOM')"></div>
-</div>
-<div>
-<h3 class="text-xl font-bold text-gray-900 dark:text-white">E-commerce Platform</h3>
-<p class="mt-3 text-base text-gray-600 dark:text-gray-400">Developed a comprehensive e-commerce platform using Spring Boot, enabling seamless online shopping experiences for users. Implemented features such as product catalog management, shopping cart functionality, order processing, and secure payment integration.</p>
-</div>
-</div>
-<div class="group grid items-center gap-8 rounded-lg bg-white/5 p-6 transition-all duration-300 hover:bg-white/10 dark:bg-black/5 dark:hover:bg-black/10 md:grid-cols-2 md:gap-12">
-<div class="overflow-hidden rounded-lg md:order-2">
-<div class="h-64 w-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDHwfkBv6FjMmdLssAj68Rs6J854ud0Ut1o8WKneeE7ZziDc_shG_ndn3Uo1fH_eyp8rZ66PTmASrJaHAqQZX1rohi28n5O8C_K1aEzl_5m9MBFqTWy02rnQnf1Vq9JE9MxrKc7iqm1FAFKhDiwObcejW8T1xQtO7QwMroYTRWcNOAiksGZA6_VKtUfwNqH8O9CJYVw8rHDh--7_NqH8Q2BfKcICQus2WUCEJSB9rlZ88s-IuYLwcwCZvvgRaCS2WRDIwCZLmLeTqM')"></div>
-</div>
-<div class="md:order-1">
-<h3 class="text-xl font-bold text-gray-900 dark:text-white">Inventory Management System</h3>
-<p class="mt-3 text-base text-gray-600 dark:text-gray-400">Designed and built an inventory management system using JavaFX, providing real-time tracking of stock levels, automated reordering, and detailed reporting. The system improved efficiency and reduced operational costs for a retail business.</p>
-</div>
-</div>
-<div class="group grid items-center gap-8 rounded-lg bg-white/5 p-6 transition-all duration-300 hover:bg-white/10 dark:bg-black/5 dark:hover:bg-black/10 md:grid-cols-2 md:gap-12">
-<div class="overflow-hidden rounded-lg">
-<div class="h-64 w-full bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCOTSm0efA84k2vTRcEFi0mdVxKPwqaHwpclNw8cnTqQbkOBR0wtQ4yTXM90xf_fayj-wXB1imyYpDH64961gwmJd3LcTLBIqd_VNDjoWXyKmqy28QrWw09-GXEIECfc3niWeQrdTECBtDJqKluY1GmW4I5CP7jKN3mmXJIrncf-D2TMktOXvYEppFAKXjWIZ3ZpAYUJxvjKxFTeS2Ncfi3YNGuNqiQYu-URgi9gwao0pydN6ByCyK9-aSGlf9ltKPf0p8HnRzxCQE')"></div>
-</div>
-<div>
-<h3 class="text-xl font-bold text-gray-900 dark:text-white">Data Analysis Tool</h3>
-<p class="mt-3 text-base text-gray-600 dark:text-gray-400">Created a data analysis tool using Apache Spark, enabling efficient processing and analysis of large datasets. The tool provided insights into customer behavior, sales trends, and other key metrics, supporting data-driven decision-making.</p>
-</div>
-</div>
-</div>
-</section>
-<section class="mx-auto mt-24 max-w-4xl scroll-mt-20 text-center" id="contact">
-<h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Contact</h2>
-<p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600 dark:text-gray-400">
-            I'm always open to discussing new opportunities and collaborations. Feel free to reach out.
-          </p>
-<div class="mt-10 flex items-center justify-center gap-x-6">
-<a class="rounded-md bg-primary px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary" href="mailto:alex.j@example.com">Email Me</a>
-<a class="text-sm font-semibold leading-6 text-gray-900 dark:text-white" href="#">Connect on LinkedIn <span aria-hidden="true">→</span></a>
-</div>
-</section>
-</main>
-<footer class="mt-32 border-t border-gray-200 dark:border-gray-800">
-<div class="container mx-auto px-4 py-8 sm:px-6 lg:px-8">
-<p class="text-center text-sm text-gray-500 dark:text-gray-400">© 2024 Alex Johnson. All rights reserved.</p>
-</div>
-</footer>
-</div>
 
-</body></html>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+    <div class="min-h-screen">
+        <header class="border-b border-gray-200 dark:border-gray-800">
+            <div class="container mx-auto flex h-20 items-center justify-between px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center gap-3">
+                    <svg class="h-6 w-6 text-primary" fill="none" viewBox="0 0 48 48"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_6_330)">
+                            <path clip-rule="evenodd"
+                                d="M24 0.757355L47.2426 24L24 47.2426L0.757355 24L24 0.757355ZM21 35.7574V12.2426L9.24264 24L21 35.7574Z"
+                                fill="currentColor" fill-rule="evenodd"></path>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_6_330">
+                                <rect fill="white" height="48" width="48"></rect>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <h1 class="text-xl font-bold text-gray-900 dark:text-white">Bartosz Gwóźdź</h1>
+                </div>
+                <nav class="hidden items-center gap-8 md:flex">
+                    <a class="text-sm font-medium hover:text-primary" href="#about">About</a>
+                    <a class="text-sm font-medium hover:text-primary" href="#projects">Projects</a>
+                    <a class="text-sm font-medium hover:text-primary" href="#contact">Contact</a>
+                    <a class="text-gray-600 hover:text-primary dark:text-gray-400" href="#">
+                        <svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a class="text-gray-600 hover:text-primary dark:text-gray-400" href="#">
+                        <svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z">
+                            </path>
+                        </svg>
+                    </a>
+                </nav>
+                <button class="md:hidden">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2"></path>
+                    </svg>
+                </button>
+            </div>
+        </header>
+        <main class="container mx-auto px-4 py-16 sm:px-6 lg:px-8">
+            <section class="text-center" id="hero">
+                <div class="mx-auto h-40 w-40 rounded-full bg-cover bg-center"
+                    style="background-image: url('./itsme.png')"></div>
+                <h2 class="mt-6 text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl">Bartosz
+                    Gwóźdź</h2>
+                <p class="mt-3 text-xl text-primary">Java Software Developer</p>
+                <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600 dark:text-gray-400">
+                    Experienced Java developer with a passion for creating efficient and scalable applications. Proven
+                    track record in delivering high-quality software solutions.
+                </p>
+            </section>
+            <section class="mx-auto mt-24 max-w-4xl scroll-mt-20" id="about">
+                <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">About Me</h2>
+                <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-400">
+                    I’m a Software Engineer with almost 5 years of experience at Parasoft, where I focused on backend
+                    development, CI/CD pipelines, and performance tuning. I love building systems that are not only
+                    reliable and scalable, but also bring real impact — like boosting throughput by 100x or cutting
+                    Docker images down by 40%.
+                </br>
+                    Along the way, I’ve worked a lot with telemetry, DevOps tooling, and observability in distributed
+                    environments. I’m always excited about new challenges where I can put my Java skills, cloud
+                    integration know-how, and passion for system reliability to work on meaningful solutions.
+                </p>
+            </section>
+            <section class="mx-auto mt-24 max-w-4xl scroll-mt-20" id="projects">
+                <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Projects</h2>
+                <div class="mt-12 grid gap-12 sm:grid-cols-1 lg:grid-cols-1">
+                    <div
+                        class="group grid items-center gap-8 rounded-lg bg-white/5 p-6 transition-all duration-300 hover:bg-white/10 dark:bg-black/5 dark:hover:bg-black/10 md:grid-cols-2 md:gap-12">
+                        <div class="overflow-hidden rounded-lg">
+                            <div class="h-64 w-full bg-cover bg-center"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCjuSWUSSJ4OjhoKfdsDGiaEd9MIOVqYBvPz_ae7QWMNb83T8TSaFIc07trabS4DgWv2n8LfiqMPMEQmaI9y7Ndh3Xc9Jp6gSlNYXBQO5AxPml3WqEvg-YeeVGb5uh1SJKVyhjz3t28Z14xbfI5T-n7KtCqh0h12TsvQFKFEZiLfU8SHc7VtDF_KTSwfU_sB8OSjqIbjhJv2ItSsweclov1ewf86qJ8-m8AbyzZlCWNBP2VQPbXQYd5a7QUOw9ruVNeuWaWyU3RSOM')">
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 dark:text-white">sprawdzsluch.pl</h3>
+                            <p class="mt-3 text-base text-gray-600 dark:text-gray-400">SprawdzSluch.pl is a hearing test
+                                platform built on a microservices backend architecture. The test itself is implemented
+                                using the Web Audio API, while dedicated backend services handle test result
+                                persistence, payment processing, and email notifications.
+                                This design ensures scalability, reliability, and separation of concerns, allowing each
+                                service to evolve independently while maintaining a seamless user experience.</p>
+                        </div>
+                    </div>
+                    <!-- <div
+                        class="group grid items-center gap-8 rounded-lg bg-white/5 p-6 transition-all duration-300 hover:bg-white/10 dark:bg-black/5 dark:hover:bg-black/10 md:grid-cols-2 md:gap-12">
+                        <div class="overflow-hidden rounded-lg md:order-2">
+                            <div class="h-64 w-full bg-cover bg-center"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDHwfkBv6FjMmdLssAj68Rs6J854ud0Ut1o8WKneeE7ZziDc_shG_ndn3Uo1fH_eyp8rZ66PTmASrJaHAqQZX1rohi28n5O8C_K1aEzl_5m9MBFqTWy02rnQnf1Vq9JE9MxrKc7iqm1FAFKhDiwObcejW8T1xQtO7QwMroYTRWcNOAiksGZA6_VKtUfwNqH8O9CJYVw8rHDh--7_NqH8Q2BfKcICQus2WUCEJSB9rlZ88s-IuYLwcwCZvvgRaCS2WRDIwCZLmLeTqM')">
+                            </div>
+                        </div>
+                        <div class="md:order-1">
+                            <h3 class="text-xl font-bold text-gray-900 dark:text-white">Inventory Management System</h3>
+                            <p class="mt-3 text-base text-gray-600 dark:text-gray-400">Designed and built an inventory
+                                management system using JavaFX, providing real-time tracking of stock levels, automated
+                                reordering, and detailed reporting. The system improved efficiency and reduced
+                                operational costs for a retail business.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="group grid items-center gap-8 rounded-lg bg-white/5 p-6 transition-all duration-300 hover:bg-white/10 dark:bg-black/5 dark:hover:bg-black/10 md:grid-cols-2 md:gap-12">
+                        <div class="overflow-hidden rounded-lg">
+                            <div class="h-64 w-full bg-cover bg-center"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCOTSm0efA84k2vTRcEFi0mdVxKPwqaHwpclNw8cnTqQbkOBR0wtQ4yTXM90xf_fayj-wXB1imyYpDH64961gwmJd3LcTLBIqd_VNDjoWXyKmqy28QrWw09-GXEIECfc3niWeQrdTECBtDJqKluY1GmW4I5CP7jKN3mmXJIrncf-D2TMktOXvYEppFAKXjWIZ3ZpAYUJxvjKxFTeS2Ncfi3YNGuNqiQYu-URgi9gwao0pydN6ByCyK9-aSGlf9ltKPf0p8HnRzxCQE')">
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 dark:text-white">Data Analysis Tool</h3>
+                            <p class="mt-3 text-base text-gray-600 dark:text-gray-400">Created a data analysis tool
+                                using Apache Spark, enabling efficient processing and analysis of large datasets. The
+                                tool provided insights into customer behavior, sales trends, and other key metrics,
+                                supporting data-driven decision-making.</p>
+                        </div>
+                    </div> -->
+                </div>
+            </section>
+            <section class="mx-auto mt-24 max-w-4xl scroll-mt-20 text-center" id="contact">
+                <h2 class="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Contact</h2>
+                <p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-gray-600 dark:text-gray-400">
+                    I'm always open to discussing new opportunities and collaborations. Feel free to reach out.
+                </p>
+                <div class="mt-10 flex items-center justify-center gap-x-8">
+                    <a href="mailto:bartoszgwozdz@gmail.com" class="text-gray-600 hover:text-primary dark:text-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                        <span class="sr-only">Email</span>
+                    </a>
+                    <a href="http://www.linkedin.com/in/bartosz-gwozdz" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-primary dark:text-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        <span class="sr-only">LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/bartoszgwozdz" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-primary dark:text-gray-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                        <span class="sr-only">GitHub</span>
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer class="mt-32 border-t border-gray-200 dark:border-gray-800">
+            <div class="container mx-auto px-4 py-8 sm:px-6 lg:px-8">
+                <div class="flex flex-col gap-4">
+                    <p class="text-center text-sm text-gray-500 dark:text-gray-400">
+                        &copy; 2023 Bartosz Gwóźdź. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
